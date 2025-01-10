@@ -1,7 +1,7 @@
 name: Daily Tweet Bot
 on:
   schedule:
-    - cron: '0 15 * * *'
+    - cron: '*/15 * * * *' # '0 15 * * *'
 
 jobs:
   tweet:
