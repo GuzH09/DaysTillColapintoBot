@@ -22,7 +22,7 @@ async function tweetCountdown() {
   let tweet: string;
 
   if (daysLeft > 0) {
-    tweet = `${daysLeft} Test`;
+    tweet = `${daysLeft} días para Miami.`;
   } else if (daysLeft === 0) {
     tweet = `Hoy Colapinto corre en Miami.`;
   } else {
