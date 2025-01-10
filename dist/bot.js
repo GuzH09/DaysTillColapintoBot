@@ -60,10 +60,10 @@ function tweetCountdown() {
                 case 0:
                     daysLeft = daysUntilRace();
                     if (daysLeft > 0) {
-                        tweet = "".concat(daysLeft, " d\u00EDas para Miami");
+                        tweet = "".concat(daysLeft, " d\u00EDas para Colapinto en Miami");
                     }
                     else if (daysLeft === 0) {
-                        tweet = "Hoy Colapinto corre en Miami";
+                        tweet = "Hoy Colapinto corre en Miami.";
                     }
                     else {
                         tweet = '';
