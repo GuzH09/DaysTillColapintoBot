@@ -23,8 +23,8 @@ jobs:
         run: |
           echo "API_KEY=${{ secrets.API_KEY }}" >> .env
           echo "API_SECRET=${{ secrets.API_SECRET }}" >> .env
-          echo "API_SECRET=${{ secrets.ACCESS_TOKEN }}" >> .env
-          echo "API_SECRET=${{ secrets.ACCESS_TOKEN_SECRET }}" >> .env
+          echo "ACCESS_TOKEN=${{ secrets.ACCESS_TOKEN }}" >> .env
+          echo "ACCESS_TOKEN_SECRET=${{ secrets.ACCESS_TOKEN_SECRET }}" >> .env
 
       - name: Install dependencies
         run: npm install
