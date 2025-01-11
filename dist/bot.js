@@ -63,7 +63,7 @@ function tweetCountdown() {
                         tweet = "".concat(daysLeft, " d\u00EDas para Miami.");
                     }
                     else if (daysLeft === 0) {
-                        tweet = "Hoy Colapinto corre en Miami.";
+                        tweet = process.env.FINAL_MESSAGE || '';
                     }
                     else {
                         tweet = '';
