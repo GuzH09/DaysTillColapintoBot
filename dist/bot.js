@@ -47,7 +47,7 @@ var client = new twitter_api_v2_1.TwitterApi({
     accessSecret: process.env.ACCESS_TOKEN_SECRET,
 });
 function daysUntilRace() {
-    var raceDate = new Date('2025-05-02');
+    var raceDate = new Date('2025-05-16');
     var today = new Date();
     var diff = raceDate.getTime() - today.getTime();
     return Math.ceil(diff / (1000 * 60 * 60 * 24));
@@ -60,7 +60,7 @@ function tweetCountdown() {
                 case 0:
                     daysLeft = daysUntilRace();
                     if (daysLeft > 0) {
-                        tweet = "".concat(daysLeft, " d\u00EDas para Miami.");
+                        tweet = "".concat(daysLeft, " d\u00EDas para Imola.");
                     }
                     else if (daysLeft === 0) {
                         tweet = process.env.FINAL_MESSAGE || '';

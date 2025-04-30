@@ -11,7 +11,7 @@ const client = new TwitterApi({
 });
 
 function daysUntilRace(): number {
-  const raceDate = new Date('2025-05-02');
+  const raceDate = new Date('2025-05-16');
   const today = new Date();
   const diff = raceDate.getTime() - today.getTime();
   return Math.ceil(diff / (1000 * 60 * 60 * 24));
@@ -22,7 +22,7 @@ async function tweetCountdown() {
   let tweet: string;
 
   if (daysLeft > 0) {
-    tweet = `${daysLeft} días para Miami.`;
+    tweet = `${daysLeft} días para Imola.`;
   } else if (daysLeft === 0) {
     tweet = process.env.FINAL_MESSAGE || '';
   } else {
